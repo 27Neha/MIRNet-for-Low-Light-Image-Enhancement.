@@ -72,8 +72,22 @@ We utilize the widely-used **LoL (Low-Light) Dataset** for training and evaluati
 * **Diversity:** Contains a variety of indoor and outdoor scenes captured under real-world low-light conditions.
 
 ### Dataset Structure
-
-Your data directory should be structured as follows:data/ └── LoL_Dataset/ ├── train/ │ ├── low/ │ │ ├── 1_low.png │ │ └── ... │ └── normal/ │ ├── 1_normal.png │ └── ... └── test/ ├── low/ └── normal/
+data/
+└── LoL_Dataset/
+    ├── train/
+    │   ├── low/    <-- Contains the 485 low-light training images
+    │   │   ├── 1_low.png
+    │   │   ├── 2_low.png
+    │   │   └── ...
+    │   └── normal/ <-- Contains the 485 corresponding normal-light training images
+    │       ├── 1_normal.png
+    │       ├── 2_normal.png
+    │       └── ...
+    └── test/
+        ├── low/    <-- Contains the 15 low-light testing images
+        │   ├── 486_low.png
+        │   └── ...
+        └── normal/ <-- Contains the 15 corresponding normal-light testing images
 ## 🔬 Experiments and Results
 
 ### Training Configuration
