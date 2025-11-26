@@ -70,24 +70,7 @@ We utilize the widely-used **LoL (Low-Light) Dataset** for training and evaluati
 * **Training Pairs:** 485 low-light and corresponding normal-light image pairs.
 * **Testing Pairs:** 15 low-light and corresponding normal-light image pairs.
 * **Diversity:** Contains a variety of indoor and outdoor scenes captured under real-world low-light conditions.
-
-### Dataset Structure
-data/
-└── LoL_Dataset/
-    ├── train/
-    │   ├── low/    <-- Contains the 485 low-light training images
-    │   │   ├── 1_low.png
-    │   │   ├── 2_low.png
-    │   │   └── ...
-    │   └── normal/ <-- Contains the 485 corresponding normal-light training images
-    │       ├── 1_normal.png
-    │       ├── 2_normal.png
-    │       └── ...
-    └── test/
-        ├── low/    <-- Contains the 15 low-light testing images
-        │   ├── 486_low.png
-        │   └── ...
-        └── normal/ <-- Contains the 15 corresponding normal-light testing images
+  
 ## 🔬 Experiments and Results
 
 ### Training Configuration
